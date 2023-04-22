@@ -422,3 +422,27 @@
         conditions:
         - !type:ReagentThreshold
           min: 20
+type: reagent
+  id: SpaceHeavyDrugs
+  name: reagent-name-space-heavydrugs
+  group: Narcotics
+  desc: reagent-desc-space-heavydrugs
+  physicalDesc: reagent-physical-desc-syrupy
+  flavor: bitter
+  color: "#63906e"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 7
+        refresh: false
+      !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.7
+      !type:HealthChange
+        damage:
+          types:
+            Poison: 0.4

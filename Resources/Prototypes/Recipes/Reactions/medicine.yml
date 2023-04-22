@@ -372,3 +372,14 @@
       amount: 1
   products:
     Sigynate: 4
+ type: reaction
+  id: SpaceHeavyDrugs
+  reactants:
+    SpaceDrugs:
+      amount: 1
+    Radium:
+      amount: 2
+    Kelotane:
+      amount: 1
+  products:
+    SpaceHeavyDrugs: 3
